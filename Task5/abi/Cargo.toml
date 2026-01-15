@@ -1,0 +1,9 @@
+[package]
+name = "abi"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ethers = { version = "2.0", features = ["rustls", "ws"] } # 核心库
+tokio = { version = "1", features = ["full"] }            # 异步运行时
+eyre = "0.6"                                              # 简单的错误处理 (可选，但推荐)
